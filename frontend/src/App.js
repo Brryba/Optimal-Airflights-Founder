@@ -6,6 +6,8 @@ import 'leaflet/dist/leaflet.css';
 import {Icon} from "leaflet";
 import { useMapEvents } from 'react-leaflet';
 import { fetchCities, addCity, updateCity, deleteCity } from './Api';
+import FlightsAdder from "./FlightsAdder.js";
+import SearchSelector from "./SearchSelector";
 
 function MapClickHandler({ onMapClick }) {
     useMapEvents({
@@ -140,6 +142,10 @@ function App() {
                         </Marker>
                     ))}
                 </MapContainer>
+            </div>
+            <div style={{display: 'flex'}}>
+                <FlightsAdder/>
+                <SearchSelector/>
             </div>
         </div>
     );
