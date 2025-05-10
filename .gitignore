@@ -2,4 +2,4 @@
 /frontend/build
 /backend/target
 /backend/.mvn
-.idea
+/.idea
